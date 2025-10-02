@@ -63,6 +63,14 @@ def exercice14():
    for i in range(1, 6):
     print(f"{i} x 2 =", nombre*i)
 
+def exercice15():
+    nombre = int(input("entrer la longueur d'un cote en centimetre "))
+    print("le carre a une perimetre de", nombre * 4)
+
+def exercice16():
+    nombre = int(input("entrer la longueur d'un cote en centimetre "))
+    print("le carre a une aire de", nombre * nombre)
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -95,6 +103,10 @@ def main():
         exercice13()
     elif choix =="14":
         exercice14()
+    elif choix =="15":
+        exercice15()
+    elif choix =="16":
+        exercice16()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
