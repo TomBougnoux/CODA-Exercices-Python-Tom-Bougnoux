@@ -20,7 +20,11 @@ def exercice5():
     number =   int(input("Selectionner un autre nombre "))
     print("Votre résultat est", nombre + number)
 
-
+def exercice6():
+    nombre = int(input("Selectionner un nombre "))
+    number =   int(input("Selectionner un autre nombre "))
+    print("Votre résultat est", nombre - number)
+    
 
 
 def main():
@@ -36,6 +40,8 @@ def main():
         exercice4()
     elif choix == "5":
         exercice5()
+    elif choix == "6":
+        exercice6()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
