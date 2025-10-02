@@ -11,6 +11,11 @@ def exercice3():
     print("deuxieme ligne")
     print("troisieme ligne")
 
+def exercice4():
+    age = int(input("Quel est ton année de naissance"))
+    print("Vous avez",2025-age,"ans")
+
+
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
@@ -20,6 +25,8 @@ def main():
         exercice2()
     elif choix == "3":
         exercice3()
+    elif choix == "4":
+        exercice4()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
