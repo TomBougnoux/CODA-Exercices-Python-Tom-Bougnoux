@@ -58,8 +58,10 @@ def exercice13():
      for i in range(1,6):
         print(i)
 
-
-    
+def exercice14():
+   nombre=int(2)
+   for i in range(1, 6):
+    print(f"{i} x 2 =", nombre*i)
 
 
 def main():
@@ -91,6 +93,8 @@ def main():
         exercice12()
     elif choix =="13":
         exercice13()
+    elif choix =="14":
+        exercice14()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
