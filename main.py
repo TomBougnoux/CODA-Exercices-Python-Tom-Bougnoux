@@ -22,17 +22,17 @@ def exercice5():
 
 def exercice6():
     nombre = int(input("Selectionner un nombre "))
-    number = int(input("Selectionner un autre nombre "))
+    number = int(input("Selectionner un autre a soustraire "))
     print("Votre résultat est", nombre - number)
 
 def exercice7():
     nombre = int(input("Selectionner un nombre "))
-    number = int(input("Selectionner un autre nombre "))
+    number = int(input("Selectionner un autre a multiplier "))
     print("Votre résultat est", nombre * number)
 
 def exercice8():
     nombre = int(input("Selectionner un nombre "))
-    number = int(input("Selectionner un autre nombre "))
+    number = int(input("Selectionner un autre a diviser "))
     if number==0:
         print("On ne peut pas diviser par 0")
     else:
@@ -43,12 +43,12 @@ def exercice9():
     print("Votre résultat est", nombre * nombre)
 
 def exercice10():
-    nombre = int(input("Selectionner un nombre "))
+    nombre = int(input("Selectionner un nombre qui sera multiplier par 2 "))
     print("votre résultat est", nombre*2)
 
 def exercice11():
-    
-
+    nombre = int(input("Selectionner un nombre qui sera diviser par 2 "))
+    print("votre résultat est", nombre/2)
 
     
 
@@ -77,7 +77,7 @@ def main():
     elif choix =="10":
         exercice10()
     elif choix =="11":
-        exercice10()
+        exercice11()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
