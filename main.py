@@ -17,18 +17,39 @@ def exercice4():
 
 def exercice5():
     nombre = int(input("Selectionner un nombre "))
-    number =   int(input("Selectionner un autre nombre "))
+    number = int(input("Selectionner un autre nombre "))
     print("Votre résultat est", nombre + number)
 
 def exercice6():
     nombre = int(input("Selectionner un nombre "))
-    number =   int(input("Selectionner un autre nombre "))
+    number = int(input("Selectionner un autre nombre "))
     print("Votre résultat est", nombre - number)
 
 def exercice7():
     nombre = int(input("Selectionner un nombre "))
-    number =   int(input("Selectionner un autre nombre "))
+    number = int(input("Selectionner un autre nombre "))
     print("Votre résultat est", nombre * number)
+
+def exercice8():
+    nombre = int(input("Selectionner un nombre "))
+    number = int(input("Selectionner un autre nombre "))
+    if number==0:
+        print("On ne peut pas diviser par 0")
+    else:
+        print("votre résultat est", nombre / number)
+
+def exercice9():
+    nombre = int(input("Selectionner un nombre "))
+    print("Votre résultat est", nombre * nombre)
+
+def exercice10():
+    nombre = int(input("Selectionner un nombre "))
+    print("votre résultat est", nombre*2)
+
+def exercice11():
+    
+
+
     
 
 
@@ -49,6 +70,14 @@ def main():
         exercice6()
     elif choix == "7":
         exercice7()
+    elif choix =="8":
+        exercice8()
+    elif choix =="9":
+        exercice9()
+    elif choix =="10":
+        exercice10()
+    elif choix =="11":
+        exercice10()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
