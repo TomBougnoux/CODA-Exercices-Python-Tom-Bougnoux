@@ -72,12 +72,28 @@ def exercice16():
     print("le carre a une aire de", nombre * nombre)
 
 def exercice17():
-    nombre = int(input("inserer les euros "))
+    nombre = int(input("entrer les euros "))
     print(nombre * 1.1, "dollars")
 
 def exercice18():
-    nombre = int(input("enserer les minutes "))
+    nombre = int(input("entrer les minutes "))
     print(nombre*60, "secondes")
+
+def exercice19():
+    nombre =int(input("entrer le prix HT "))
+    print(nombre * 1.2, "TTC")
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 def main():
@@ -119,6 +135,8 @@ def main():
         exercice17()
     elif choix =="18":
         exercice18()
+    elif choix =="19":
+        exercice19()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
