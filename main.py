@@ -140,10 +140,31 @@ def exercice27():
     age=int(input("entrer votre age "))
     if age<12 :
         print("enfant")
-    elif 12 <= age >= 17 :
+    elif 12 <= age <= 17 :
         print("ado")
     elif age>18 :
         print("adulte")
+
+def exercice28():
+    temp=int(input("entre la temperature "))
+    if temp<0 :
+        print("solide")
+    elif 0 <= temp <= 100 :
+        print("liquide")
+    elif temp>100 :
+        print("gaz")
+
+def exercice29():
+    note=int(input("entre la note "))
+    if note<=10.99 :
+        print("recalé")
+    elif 11 <= note <= 13.99 :
+        print("passable")
+    elif 14 <= note <= 16.99 :
+        print("bien")
+    elif note>=17 :
+        print("très bien")
+
 
 
 
@@ -152,17 +173,17 @@ def exercice27():
 def main():
     # Demande à l'utilisateur quel exercice exécuter
     choix = input("Entrez le numéro de l'exercice à exécuter : ")
-    if choix == "1":
+    if choix =="1":
         exercice1()
-    elif choix == "2":
+    elif choix =="2":
         exercice2()
-    elif choix == "3":
+    elif choix =="3":
         exercice3()
-    elif choix == "4":
+    elif choix =="4":
         exercice4()
-    elif choix == "5":
+    elif choix =="5":
         exercice5()
-    elif choix == "6":
+    elif choix =="6":
         exercice6()
     elif choix == "7":
         exercice7()
@@ -206,6 +227,10 @@ def main():
         exercice26()
     elif choix =="27":
         exercice27()
+    elif choix =="28":
+        exercice28()
+    elif choix =="29":
+        exercice29()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
