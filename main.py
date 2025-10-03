@@ -88,8 +88,14 @@ def exercice20():
     age =int(input("Quel est ton age "))
     print(nom,"a", age, "ans")
 
-
-
+def exercice21():
+    nombre =int(input("entrer le nombre "))
+    if nombre == 0 :
+        print("nul")
+    elif nombre < 0 :
+        print("négatif")        
+    elif nombre > 0 :
+        print("positif")
 
 
 
@@ -141,6 +147,8 @@ def main():
         exercice19()
     elif choix =="20":
         exercice20()
+    elif choix =="21":
+        exercice21()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
