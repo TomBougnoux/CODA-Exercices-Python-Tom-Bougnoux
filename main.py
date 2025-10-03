@@ -112,20 +112,30 @@ def exercice23():
         print("non validé")
         
 def exercice24():
-    nombre=int(input("Inserez un nombre "))
-    number=int(input("Inserez un autre nombre "))
+    nombre=int(input("entrer un nombre "))
+    number=int(input("entrer un autre nombre "))
     if nombre>number:
        print(f"{nombre} est plus grand que {number}")
     elif nombre<number:
        print(f"{number} est plus grand que {nombre}")
 
 def exercice25():
-    nombre=int(input("Inserez un nombre "))
-    number=int(input("Inserez un autre nombre "))
+    nombre=int(input("entrer un nombre "))
+    number=int(input("entrer un autre nombre "))
     if nombre>number:
-       print(f"{nombre} et {number} ne sont pas croissant")
+       print(f"{nombre} et {number} sont en ordre decroissant")
     elif nombre<number:
-       print(f"{nombre} et {number} sont croissant")
+       print(f"{nombre} et {number} sont en ordre croissant")
+
+def exercice26():
+    nombre=int(input("entrer un nombre "))
+    diviseur=int(5)
+    last_digit = nombre % 10
+    if last_digit == 0 or last_digit == 5:
+        print(f"{nombre} est un divisible de 5")
+    elif last_digit != 0 or last_digit != 5:
+        print(f"{nombre} est non divisible par 5")
+
 
 
 
@@ -182,6 +192,8 @@ def main():
         exercice24()
     elif choix =="25":
         exercice25()
+    elif choix =="26":
+        exercice26()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
