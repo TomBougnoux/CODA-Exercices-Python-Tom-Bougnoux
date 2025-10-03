@@ -83,8 +83,10 @@ def exercice19():
     nombre =int(input("entrer le prix HT "))
     print(nombre * 1.2, "TTC")
 
-
-
+def exercice20():
+    nom =(input("Quel est ton nom "))
+    age =int(input("Quel est ton age "))
+    print(nom,"a", age, "ans")
 
 
 
@@ -137,6 +139,8 @@ def main():
         exercice18()
     elif choix =="19":
         exercice19()
+    elif choix =="20":
+        exercice20()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
