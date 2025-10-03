@@ -97,8 +97,12 @@ def exercice21():
     elif nombre > 0 :
         print("positif")
 
-
-
+def exercice22():
+    nombre =int(input("entrer l'age "))
+    if nombre >= 18 :
+        print("majeur")
+    elif nombre <18 :
+        print("mineur")
 
 
 
@@ -149,6 +153,8 @@ def main():
         exercice20()
     elif choix =="21":
         exercice21()
+    elif choix =="22":
+        exercice22()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
