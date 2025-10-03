@@ -71,6 +71,10 @@ def exercice16():
     nombre = int(input("entrer la longueur d'un cote en centimetre "))
     print("le carre a une aire de", nombre * nombre)
 
+def exercice17():
+    nombre = int(input("inserer les euros "))
+    print(nombre * 1.1, "dollars")
+
 
 def main():
     # Demande à l'utilisateur quel exercice exécuter
@@ -107,6 +111,8 @@ def main():
         exercice15()
     elif choix =="16":
         exercice16()
+    elif choix =="17":
+        exercice17()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
