@@ -146,7 +146,7 @@ def exercice27():
         print("adulte")
 
 def exercice28():
-    temp=int(input("entre la temperature "))
+    temp=int(input("entre la temperature de l'eau"))
     if temp<0 :
         print("solide")
     elif 0 <= temp <= 100 :
@@ -165,6 +165,10 @@ def exercice29():
     elif note>=17 :
         print("très bien")
 
+def exercice30():
+     n=int(input("entrer un nombre"))
+     for n in range (1,n+1) :
+         print(n)
 
 
 
@@ -231,6 +235,8 @@ def main():
         exercice28()
     elif choix =="29":
         exercice29()
+    elif choix =="30":
+        exercice30()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
