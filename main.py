@@ -110,9 +110,14 @@ def exercice23():
         print("validé")
     else:
         print("non validé")
-   
-
-
+        
+def exercice24():
+    nombre=int(input("Inserez un nombre "))
+    number=int(input("Inserez un nombre "))
+    if nombre>number:
+       print(f"{nombre} est plus grand que {number}")
+    elif nombre<number:
+       print(f"{number} est plus grand que {nombre}")
 
 
 
@@ -165,6 +170,8 @@ def main():
         exercice22()
     elif choix =="23":
         exercice23()
+    elif choix =="24":
+        exercice24()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
