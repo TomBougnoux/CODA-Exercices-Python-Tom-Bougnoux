@@ -113,11 +113,19 @@ def exercice23():
         
 def exercice24():
     nombre=int(input("Inserez un nombre "))
-    number=int(input("Inserez un nombre "))
+    number=int(input("Inserez un autre nombre "))
     if nombre>number:
        print(f"{nombre} est plus grand que {number}")
     elif nombre<number:
        print(f"{number} est plus grand que {nombre}")
+
+def exercice25():
+    nombre=int(input("Inserez un nombre "))
+    number=int(input("Inserez un autre nombre "))
+    if nombre>number:
+       print(f"{nombre} et {number} ne sont pas croissant")
+    elif nombre<number:
+       print(f"{nombre} et {number} sont croissant")
 
 
 
@@ -172,6 +180,8 @@ def main():
         exercice23()
     elif choix =="24":
         exercice24()
+    elif choix =="25":
+        exercice25()
     else:
         print("Exercice non reconnu.")
 if __name__ == "__main__":
